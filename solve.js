@@ -15,7 +15,7 @@ const UNSAFE = /[\\\x00-\x09\x0b\x0c\x0e-\x1f]/;
 const INNER_QUOTE = /""(?<=[^,\n]"")(?![,\r\n]|$)/g;
 const RE_BREAK = /\r\n?|\n/g;
 const RE_END = /\],/g;
-const WINDOW = 16384;
+const WINDOW = 4096;
 
 function count(s, re) {
   const m = s.match(re);
